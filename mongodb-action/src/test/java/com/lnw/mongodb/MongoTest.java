@@ -1,5 +1,6 @@
 package com.lnw.mongodb;
 
+import java.util.Date;
 import java.util.Optional;
 
 import com.lnw.mongodb.entity.UserInfo;
@@ -23,13 +24,13 @@ public class MongoTest {
 
     @Test
     void testAddUser() {
-        final UserInfo userInfo = new UserInfo(1615432L, "LNW", 24);
+        final UserInfo userInfo = new UserInfo(1615434L, "LNW", 24, new Date());
         Assertions.assertNotNull(this.userRepository.insert(userInfo));
     }
 
     @Test
     void testQueryUser() {
-        final Optional<UserInfo> result = this.userRepository.findById(1615431L);
+        final Optional<UserInfo> result = this.userRepository.findById(1615433L);
         Assertions.assertNotNull(result.get());
         System.out.println(result.get());
     }

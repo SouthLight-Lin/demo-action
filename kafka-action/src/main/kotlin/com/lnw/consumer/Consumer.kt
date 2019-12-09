@@ -19,7 +19,7 @@ fun main(args: Array<String>) {
     kafkaProps["value.deserializer"] = "org.apache.kafka.common.serialization.StringDeserializer"
     val consumer = KafkaConsumer<String, String>(kafkaProps)
     // 订阅主题
-    consumer.subscribe(Collections.singleton("test"))
+    consumer.subscribe(listOf("test"))
 
     // use关键字和自动关闭consumer连接
     consumer.use {
