@@ -1,6 +1,7 @@
 package com.lnw.consumer
 
 import org.apache.kafka.clients.consumer.KafkaConsumer
+import org.apache.kafka.common.serialization.Serializer
 import java.time.Duration
 import java.util.*
 
@@ -10,7 +11,6 @@ import java.util.*
  * @since 1.0.0
  * Date： 2019/11/13
  */
-
 fun main(args: Array<String>) {
     val kafkaProps = Properties()
     kafkaProps["bootstrap.servers"] = "localhost:9092"
