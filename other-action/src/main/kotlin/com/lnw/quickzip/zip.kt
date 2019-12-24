@@ -39,10 +39,7 @@ fun zipFileBuffer() {
     val beginStartTime = System.currentTimeMillis()
     val input = BufferedInputStream(FileInputStream(ZIPED_FILE))
     zipOut.putNextEntry(ZipEntry(FILE_NAME))
-    var tmp = 0
-    while ({ tmp = input.read();tmp }() > 0) {
-        zipOut.write(tmp)
-    }
+    input.copyTo(zipOut)
     // 耗时(毫秒)：1743
     println("耗时(毫秒)：${System.currentTimeMillis() - beginStartTime}")
 }
@@ -61,5 +58,7 @@ fun zipFileChannel() {
 }
 
 fun main(args: Array<String>) {
-    zipFileChannel()
+    // 文件压缩后大小 1886 kb
+
+    zipFileNoBuffer()
 }

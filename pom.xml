@@ -15,6 +15,7 @@
         <module>mongodb-action</module>
         <module>kafka-action</module>
         <module>jvm-action</module>
+        <module>reactor-action</module>
     </modules>
 
     <dependencies>

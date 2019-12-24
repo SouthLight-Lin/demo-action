@@ -8,8 +8,13 @@
         <outputRelativeToContentRoot value="true" />
         <module name="jvm-action" />
         <module name="mongodb-action" />
+        <module name="reactor-action" />
         <module name="kafka-action" />
+        <module name="other-action" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="other-action" target="1.5" />
+    </bytecodeTargetLevel>
   </component>
 </project>
