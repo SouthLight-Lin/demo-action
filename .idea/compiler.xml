@@ -13,7 +13,7 @@
         <module name="other-action" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
+    <bytecodeTargetLevel target="8">
       <module name="other-action" target="1.5" />
     </bytecodeTargetLevel>
   </component>
