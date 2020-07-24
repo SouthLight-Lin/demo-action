@@ -6,11 +6,12 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="janus-jmeter" />
+        <module name="other-action" />
+        <module name="reactor-action" />
         <module name="jvm-action" />
         <module name="mongodb-action" />
-        <module name="reactor-action" />
         <module name="kafka-action" />
-        <module name="other-action" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>

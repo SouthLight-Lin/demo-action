@@ -16,6 +16,7 @@
         <module>kafka-action</module>
         <module>jvm-action</module>
         <module>reactor-action</module>
+        <module>janus-jmeter</module>
     </modules>
 
     <dependencies>
